@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regal Compact Marksheet | Pixel Perfect IT Production</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@700&family=Hind+Siliguri:wght@600;700&family=Inter:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Force Authority Bolding & High Fidelity */
+        * { font-weight: 800 !important; -webkit-print-color-adjust: exact; margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #020617; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; }
+
+        /* ALL DEVICE AUTO-SCALING ENGINE */
+        .a4-wrapper {
+            width: 210mm; height: 297mm;
+            display: flex; align-items: center; justify-content: center;
+            transform: scale(calc(min(92vw / 210, 92vh / 297)));
+            transform-origin: center center;
+        }
+
+        .a4-sheet {
+            width: 210mm; height: 297mm; background: #fcfaf2;
+            padding: 5px; position: relative; border-radius: 4px;
+            display: flex; flex-direction: column;
+            /* Premium Diagonal Linen Texture */
+            background-image: url('https://www.transparenttextures.com/patterns/diagonal-linen.png');
+            box-shadow: 0 0 100px rgba(0,0,0,0.8);
+        }
+
+        /* Thick Regal Multi-Color Border */
+        .master-border {
+            height: 100%; width: 100%; border: 10px solid;
+            border-image-source: linear-gradient(45deg, #1e3a8a, #fbbf24, #10b981, #d97706, #1e3a8a);
+            border-image-slice: 1; padding: 12mm; position: relative;
+            background: rgba(252, 250, 242, 0.85); display: flex; flex-direction: column;
+            justify-content: space-between;
+            box-shadow: inset 0 0 0 2px #000;
+        }
+
+        /* Red Seal Placement */
+        .official-seal {
+            position: absolute; top: 15mm; left: 15mm;
+            width: 80px; height: 80px; border: 4px double #dc2626;
+            border-radius: 50%; color: #dc2626; display: flex; align-items: center;
+            justify-content: center; text-align: center; font-size: 10px;
+            line-height: 1.1; font-weight: 900; transform: rotate(-15deg);
+            z-index: 50; background: rgba(220, 38, 38, 0.05);
+        }
+
+        /* UI Elements */
+        .school-capsule { background: linear-gradient(135deg, #1e3a8a, #1e40af); color: #fff; padding: 14px 50px; border-radius: 20px; border: 3px solid #000; box-shadow: 0 15px 30px rgba(0,0,0,0.3); }
+        .school-title { font-family: 'Mina', sans-serif; font-size: 34px; white-space: nowrap; letter-spacing: -1px; }
+        
+        /* High-Saturation Color Filled Slots */
+        .cap-slot { border-radius: 12px; border: 2.5px solid #000; padding: 10px 20px; display: flex; align-items: center; gap: 8px; color: #fff; box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+        .cap-cyan { background: #0891b2; }
+        .cap-purple { background: #7c3aed; }
+        .cap-emerald { background: #059669; }
+        .cap-gold { background: #d97706; }
+
+        /* Table Architecture - High Contrast */
+        .neon-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 15px; overflow: hidden; border: 3px solid #000; }
+        .neon-table th { background: #1e3a8a; color: white; padding: 10px; font-size: 14px; border: 1px solid #000; text-transform: uppercase; }
+        .neon-table td { border: 1.5px solid #000; padding: 10px; text-align: center; color: #000; font-size: 16px; background: #fff; }
+        .total-row { background: #1e3a8a !important; color: #fff !important; }
+
+        @media print {
+            @page { size: A4; margin: 0; }
+            body { background: white; }
+            .a4-wrapper { transform: none; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-wrapper">
+        <div class="a4-sheet">
+            <!-- OFFICIAL RED SEAL -->
+            <div class="official-seal">
+                OFFICIAL SEAL<br>CHARCHANDRA<br>ACADEMIC NODE
+            </div>
+
+            <div class="master-border">
+                
+                <!-- TOP COMPACT HEADER -->
+                <header class="text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="school-capsule">
+                            <h1 class="school-title uppercase tracking-tighter">চরচান্দ্রা আইডিয়াল কিন্ডারগার্টেন</h1>
+                        </div>
+                    </div>
+                    <p class="text-md font-bold text-blue-900 uppercase tracking-[0.25em] mb-6">চরচান্দ্রা, কাঁঠালবাড়ী, শিবচর, মাদারীপুর।</p>
+                    
+                    <div class="flex flex-col items-center mb-6">
+                        <div class="border-b-4 border-blue-900 px-14 py-2 bg-amber-400 text-blue-950 rounded-sm shadow-lg">
+                            <h2 class="text-2xl font-black uppercase italic tracking-widest leading-none">ফলাফল পত্র (MARKSHEET)</h2>
+                        </div>
+                        <p class="mt-3 text-[11px] font-black text-slate-500 uppercase tracking-[0.5em]">সেশন: ২০২৪-২৫ | ২য় সেমিস্টার পরীক্ষা</p>
+                    </div>
+                </header>
+
+                <!-- INFORMATION SLOTS -->
+                <section class="space-y-4 mb-6">
+                    <div class="cap-slot cap-cyan">
+                        <i data-lucide="user-check" class="w-5 h-5"></i>
+                        <span class="text-sm uppercase tracking-wide">শিক্ষার্থীর নাম (Name):</span>
+                        <div class="flex-grow border-b-2 border-white/40 border-dashed h-5"></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="cap-slot cap-purple">
+                            <span class="text-[11px] uppercase">শ্রেণি:</span>
+                            <div class="flex-grow border-b border-white/40 border-dashed h-4"></div>
+                        </div>
+                        <div class="cap-slot cap-emerald">
+                            <span class="text-[11px] uppercase">শাখা:</span>
+                            <div class="flex-grow border-b border-white/40 border-dashed h-4"></div>
+                        </div>
+                        <div class="cap-slot cap-gold text-black">
+                            <span class="text-[11px] uppercase">রোল:</span>
+                            <div class="flex-grow border-b border-black/30 border-dashed h-4"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PERFORMANCE TABLE (COMPACT & BOLD) -->
+                <div class="mb-6">
+                    <table class="neon-table">
+                        <thead>
+                            <tr>
+                                <th class="w-20 text-white">ক্রমিক</th>
+                                <th class="text-left pl-10 text-white">বিষয়ের নাম (Subject Name)</th>
+                                <th class="w-24 text-white">পূর্ণমান</th>
+                                <th class="w-24 text-white">প্রাপ্ত নম্বর</th>
+                                <th class="w-24 text-white">গ্রেড</th>
+                                <th class="w-24 text-white">জিপিএ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>০১</td><td class="text-left pl-10 font-bold text-blue-900">বাংলা</td><td>১০০</td><td></td><td></td><td></td></tr>
+                            <tr><td>০২</td><td class="text-left pl-10 font-bold text-blue-900">ইংরেজি</td><td>১০০</td><td></td><td></td><td></td></tr>
+                            <tr><td>০৩</td><td class="text-left pl-10 font-bold text-blue-900">গণিত</td><td>১০০</td><td></td><td></td><td></td></tr>
+                            <tr><td>০৪</td><td class="text-left pl-10 font-bold text-blue-900">বাংলাদেশ ও বিশ্বপরিচয়</td><td>১০০</td><td></td><td></td><td></td></tr>
+                            <tr><td>০৫</td><td class="text-left pl-10 font-bold text-blue-900">ধর্ম ও নৈতিক শিক্ষা</td><td>১০০</td><td></td><td></td><td></td></tr>
+                            <tr class="bg-slate-50"><td>০৬</td><td class="text-left pl-10 font-bold text-blue-900">সাধারণ জ্ঞান</td><td>৫০</td><td></td><td></td><td></td></tr>
+                            <tr class="total-row">
+                                <td colspan="2" class="text-right pr-10 py-4 uppercase tracking-widest text-base font-black">Grand Total / সর্বমোট</td>
+                                <td class="text-2xl">৫৫০</td>
+                                <td></td><td></td><td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- FINAL RESULT SUMMARY -->
+                <div class="grid grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white border-2 border-blue-900 rounded-3xl p-4 text-center shadow-lg">
+                        <p class="text-[9px] font-black uppercase text-blue-800 mb-2">Total Marks</p>
+                        <div class="h-8 border-b-2 border-slate-200 border-dashed"></div>
+                    </div>
+                    <div class="bg-white border-2 border-blue-900 rounded-3xl p-4 text-center shadow-lg">
+                        <p class="text-[9px] font-black uppercase text-blue-800 mb-2">Final Grade</p>
+                        <div class="h-8 border-b-2 border-slate-200 border-dashed"></div>
+                    </div>
+                    <div class="bg-white border-2 border-blue-900 rounded-3xl p-4 text-center shadow-lg">
+                        <p class="text-[9px] font-black uppercase text-blue-800 mb-2">Final GPA</p>
+                        <div class="h-8 border-b-2 border-slate-200 border-dashed"></div>
+                    </div>
+                </div>
+
+                <!-- FIXED SIGNATURE GRID (STRICTLY INSIDE) -->
+                <footer class="grid grid-cols-3 gap-12 mt-auto pb-4">
+                    <div class="text-center">
+                        <div class="h-14 border-b-2 border-black border-dashed mx-4 mb-2"></div>
+                        <p class="text-[11px] font-black uppercase text-slate-800 tracking-wider">Class Teacher</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="h-14 border-b-2 border-black border-dashed mx-4 mb-2"></div>
+                        <p class="text-[11px] font-black uppercase text-slate-800 tracking-wider">Guardian Signature</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="h-14 border-b-2 border-red-600 border-dashed mx-4 mb-2"></div>
+                        <p class="text-[11px] font-black uppercase text-red-700 tracking-wider">Principal Seal</p>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PRINT INTERFACE -->
+    <div class="fixed bottom-8 right-8 no-print flex flex-col gap-4">
+        <button onclick="window.print()" class="bg-blue-600 text-white p-6 rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:scale-110 transition-all border-2 border-white">
+            <i data-lucide="printer" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
