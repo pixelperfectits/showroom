@@ -6,17 +6,18 @@
     <meta name="theme-color" content="#020617">
     <title>THE VAULT | Technical Evidence & Production Hub | Pixel Perfect IT</title>
     
-    <!-- TIER 4 SEO: MALAYSIA B2B & PRODUCTION AUTHORITY -->
-    <meta name="description" content="Official Engineering Vault of MD Ibrahim Hossain. Showcasing verified case studies in systems architecture, forensic audits, and high-fidelity media production.">
-    <meta name="keywords" content="Technical Evidence Archive, UI/UX Production Malaysia, Forensic Audit Evidence, Systems Blueprint Archive, MD Ibrahim Hossain">
-    
+    <!-- TIER 4 SEO: GLOBAL AUTHORITY & PRODUCTION EVIDENCE -->
+    <meta name="description" content="Official Engineering Vault of MD Ibrahim Hossain. Showcase of high-fidelity systems architecture, forensic audits, and elite school print media production.">
+    <meta name="keywords" content="Technical Evidence, School Admit Card Design, Markshet Forge, Systems Blueprint, MD Ibrahim Hossain, Pixel Perfect IT">
+    <meta name="author" content="MD Ibrahim Hossain">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -34,16 +35,19 @@
         .glass-panel { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .glass-panel:hover { border-color: #00F2FF; transform: translateY(-5px); box-shadow: 0 30px 60px -15px rgba(0, 242, 255, 0.15); }
         .neon-glow { text-shadow: 0 0 20px rgba(0, 242, 255, 0.7); color: #00F2FF; }
+        
         .tab-btn { cursor: pointer; padding: 12px 24px; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
         .tab-btn.active { background: rgba(0, 242, 255, 0.1); border-color: #00F2FF; color: #00F2FF; }
         .content-sec { display: none; }
         .content-sec.active { display: block; animation: fadeInUp 0.6s ease-out forwards; }
+        
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .hero-title { font-size: clamp(2.5rem, 8vw, 7rem); line-height: 0.9; font-weight: 900; }
     </style>
 </head>
 <body class="bg-grid antialiased text-slate-300">
 
-    <!-- GLOBAL NAVIGATION -->
+    <!-- NAVIGATION -->
     <nav class="fixed w-full z-50 py-4 px-6 glass-panel border-b border-white/5 top-0">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -51,31 +55,73 @@
                 <h1 class="text-xl font-black text-white uppercase italic tracking-tighter">THE <span class="neon-glow">VAULT</span></h1>
             </div>
             <a href="https://pixelperfectits.github.io/" class="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-all flex items-center gap-2">
-                <i data-lucide="arrow-left" class="w-3 h-3"></i> Back to HQ
+                <i data-lucide="arrow-left" class="w-3 h-3"></i> HQ Portal
             </a>
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <header class="pt-48 pb-10 px-6 text-center">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-5xl md:text-8xl font-black text-white uppercase italic mb-8">Engineering <br> <span class="neon-glow">Evidence.</span></h2>
+            <span class="px-4 py-1 rounded-full bg-emeraldHQ/10 border border-emeraldHQ/20 text-emeraldHQ text-[10px] font-bold uppercase tracking-[0.4em] mb-8 inline-block">Production Grade Proof of Work</span>
+            <h2 class="hero-title text-white uppercase italic mb-8">
+                Engineering <br> <span class="neon-glow">Evidence.</span>
+            </h2>
             <p class="text-slate-500 text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed italic font-bengali">
-                আমাদের প্রতিটি প্রজেক্ট এবং ব্লুপ্রিন্ট গাণিতিক নিখুঁততার অকাট্য প্রমাণ।
+                আমাদের প্রতিটি প্রজেক্ট এবং ডিজাইন গাণিতিক নিখুঁততার অকাট্য প্রমাণ।
             </p>
         </div>
     </header>
 
+    <!-- CATEGORY FILTER SYSTEM -->
     <main class="max-w-7xl mx-auto px-4 md:px-8 pb-40">
-        <!-- Interactive Tabs -->
-        <div class="flex flex-wrap justify-center gap-3 mb-20">
-            <button onclick="openTab('systems')" id="btn-systems" class="tab-btn active">Systems & AI</button>
+        
+        <div class="flex flex-wrap justify-center gap-3 mb-20 no-print">
+            <button onclick="openTab('design')" id="btn-design" class="tab-btn active">Visual Media</button>
+            <button onclick="openTab('systems')" id="btn-systems" class="tab-btn">Systems & AI</button>
             <button onclick="openTab('audit')" id="btn-audit" class="tab-btn">Diagnostics</button>
             <button onclick="openTab('land')" id="btn-land" class="tab-btn">Land Intel</button>
-            <button onclick="openTab('design')" id="btn-design" class="tab-btn">Visual Media</button>
         </div>
 
-        <!-- SECTION: SYSTEMS (CORRECTED PATHS) -->
-        <div id="sec-systems" class="content-sec active">
+        <!-- SECTION: VISUAL MEDIA (LINKED TO YOUR PRINT MEDIA FILES) -->
+        <div id="sec-design" class="content-sec active">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Sub: Institutional Print Production -->
+                <div class="glass-panel p-8 rounded-[40px] border-emeraldHQ/10 group">
+                    <div class="flex justify-between items-start mb-10">
+                        <i data-lucide="printer" class="text-emeraldHQ w-10 h-10 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-[8px] font-black bg-emeraldHQ/20 text-emeraldHQ px-2 py-0.5 rounded uppercase">Print Ready</span>
+                    </div>
+                    <h4 class="text-2xl font-black text-white uppercase italic mb-3">Institutional <br>Print Media</h4>
+                    <p class="text-sm text-slate-500 font-bengali mb-8 leading-relaxed">স্কুল আইডি কার্ড, এডমিট কার্ড এবং মার্কশিটের প্রিমিয়াম আর্কাইভ।</p>
+                    
+                    <!-- DYNAMIC LINKS FROM YOUR GITHUB STRUCTURE -->
+                    <div class="space-y-3">
+                        <a href="./design/print-media/vibrant-quad-admit-card.html" class="block p-3 bg-white/5 rounded-xl border border-white/5 hover:border-emeraldHQ transition-all text-[10px] font-mono">Asset_01: 4-Up Admit Card Matrix</a>
+                        <a href="./design/print-media/supreme-authority-marksheet.html" class="block p-3 bg-white/5 rounded-xl border border-white/5 hover:border-emeraldHQ transition-all text-[10px] font-mono">Asset_02: Supreme Marksheet Final</a>
+                        <a href="./design/print-media/supreme-textured-certificate.html" class="block p-3 bg-white/5 rounded-xl border border-white/5 hover:border-emeraldHQ transition-all text-[10px] font-mono">Asset_03: Textured Achievement Cert.</a>
+                    </div>
+                </div>
+
+                <!-- Sub: UI/UX & Web Assets -->
+                <div class="glass-panel p-8 rounded-[40px] border-neonCyan/10 group">
+                    <div class="flex justify-between items-start mb-10">
+                        <i data-lucide="monitor" class="text-neonCyan w-10 h-10 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-[8px] font-black bg-neonCyan/20 text-neonCyan px-2 py-0.5 rounded uppercase">UI/UX</span>
+                    </div>
+                    <h4 class="text-2xl font-black text-white uppercase italic mb-3">Digital Design <br>Forge</h4>
+                    <p class="text-sm text-slate-500 font-bengali mb-8 leading-relaxed">হাই-কনভার্টিং ল্যান্ডিং পেজ এবং ওয়েব ব্যানার ডিজাইন শোকেস।</p>
+                    <div class="space-y-3">
+                        <a href="#" class="block p-3 bg-white/5 rounded-xl border border-white/5 opacity-30 text-[10px] font-mono italic">Awaiting New Production...</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SECTION: SYSTEMS (AI BLUEPRINTS) -->
+        <div id="sec-systems" class="content-sec">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="glass-panel p-10 rounded-[48px] border-neonCyan/10 group">
                     <i data-lucide="layers" class="text-neonCyan w-12 h-12 mb-8 group-hover:scale-110 transition-transform"></i>
@@ -83,16 +129,10 @@
                     <p class="text-sm text-slate-500 font-bengali leading-relaxed mb-8">Al-Bawsala Al-Hajj: এন্টারপ্রাইজ লেভেল ন্যাশনাল এআই অপারেটিং সিস্টেম ব্লুপ্রিন্ট।</p>
                     <a href="./systems/blueprints/hajj-compass-v3/" class="text-neonCyan font-black text-[10px] uppercase border-b-2 border-neonCyan/20 py-2">View Architecture →</a>
                 </div>
-                <div class="glass-panel p-10 rounded-[48px] border-emeraldHQ/10 group">
-                    <i data-lucide="database" class="text-emeraldHQ w-12 h-12 mb-8 group-hover:scale-110 transition-transform"></i>
-                    <h4 class="text-2xl font-black text-white uppercase italic mb-4">Legacy Project</h4>
-                    <p class="text-sm text-slate-500 font-bengali leading-relaxed mb-8">Al-Turath Al-Hay: সাংস্কৃতিক ঐতিহ্য সংরক্ষণে উন্নত ইন্টারঅ্যাক্টিভ এআই আর্কিটেকচার।</p>
-                    <a href="./systems/blueprints/legacy-project-v3/" class="text-emeraldHQ font-black text-[10px] uppercase border-b-2 border-emeraldHQ/20 py-2">View Blueprint →</a>
-                </div>
             </div>
         </div>
 
-        <!-- SECTION: AUDIT (CORRECTED PATHS) -->
+        <!-- SECTION: AUDIT -->
         <div id="sec-audit" class="content-sec">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="glass-panel p-10 rounded-[48px] border-rose-500/10 group">
@@ -104,23 +144,17 @@
             </div>
         </div>
 
-        <!-- OTHER SECTIONS STANDBY... -->
     </main>
 
-    <!-- FOOTER WITH STRATEGIC EMAIL -->
+    <!-- FOOTER -->
     <footer class="py-24 border-t border-white/10 bg-black text-center">
         <div class="container mx-auto px-6">
             <div class="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center font-black text-neonCyan text-3xl italic border border-white/10 mx-auto mb-10">P</div>
             <h4 class="text-white font-black uppercase tracking-[0.5em] text-xs mb-4">Pixel Perfect IT Solutions</h4>
-            <div class="opacity-40 flex flex-col items-center mb-10">
+            <div class="opacity-40 flex flex-col items-center">
                 <p class="text-[10px] font-black text-white uppercase italic">MD Ibrahim Hossain</p>
-                <p class="text-[8px] font-bold uppercase tracking-[0.3em]">Principal Systems Architect</p>
+                <p class="text-[8px] font-bold uppercase tracking-[0.3em] mt-1">Principal Systems Architect</p>
             </div>
-            <!-- B2B EMAIL INQUIRY -->
-            <a href="mailto:pixelperfect.its@gmail.com?subject=Strategic Showroom Inquiry&body=Hello Architect, I am reviewing your 'Evidence Vault' and I am interested in..." 
-               class="inline-flex items-center gap-4 bg-neonCyan text-black px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-white transition-all shadow-lg">
-                <i data-lucide="mail" class="w-4 h-4"></i> Professional Inquiry
-            </a>
         </div>
     </footer>
 
