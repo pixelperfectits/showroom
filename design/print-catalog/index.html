@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Production Catalog | Pixel Perfect IT Solutions</title>
+    
+    <!-- SEO for Print Production -->
+    <meta name="description" content="A high-volume production archive showcasing elite institutional print media like marksheets, certificates, and ID cards.">
+    <meta name="keywords" content="Print Media Catalog, School Marksheet Design, Certificate Production, ID Card Design, Pixel Perfect IT">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { background-color: #020617; font-family: 'Inter', 'Hind Siliguri', sans-serif; }
+        .bg-grid { background-image: radial-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px); background-size: 40px 40px; }
+        .item-card { 
+            background: rgba(16, 185, 129, 0.03); 
+            border: 1px solid rgba(16, 185, 129, 0.1); 
+            border-radius: 24px; 
+            padding: 20px; 
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        .item-card:hover { transform: scale(1.03); border-color: #10B981; box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1); }
+        .item-card iframe { border-radius: 12px; transform: scale(1.1); transform-origin: top left; pointer-events: none; }
+    </style>
+</head>
+<body class="bg-grid text-slate-300">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 py-4 px-6 bg-black/50 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-black text-white uppercase italic tracking-tighter">Print <span class="text-emerald-400">Catalog</span></h1>
+                <p class="text-[9px] font-bold text-emerald-500 uppercase tracking-[0.3em]">High-Volume Production</p>
+            </div>
+            <a href="../" class="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-all flex items-center gap-2">
+                <i data-lucide="arrow-left" class="w-3 h-3"></i> Back to Vault
+            </a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="text-center py-20 px-6">
+        <div class="inline-block p-4 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-8">
+            <i data-lucide="printer" class="w-12 h-12 text-emerald-400"></i>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter mb-4">Print Media Archive</h2>
+        <p class="font-bengali text-slate-400 max-w-xl mx-auto leading-relaxed">
+            আন্তর্জাতিক মানের প্রাতিষ্ঠানিক প্রিন্ট মিডিয়া প্রোডাকশনের একটি গ্যালারি। প্রতিটি ডিজাইন প্রিন্ট-রেডি এবং হাই-রেজোলিউশন।
+        </p>
+    </header>
+
+    <!-- ITEM GRID -->
+    <main class="max-w-7xl mx-auto px-6 pb-40">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Item 01: Supreme Textured Certificate -->
+            <div class="item-card">
+                <div class="h-64 mb-6 overflow-hidden rounded-xl border border-white/10">
+                    <iframe src="../print-media/supreme-textured-certificate.html" class="w-full h-full" scrolling="no"></iframe>
+                </div>
+                <h3 class="text-lg font-black text-white uppercase italic mb-2">Excellence Certificate</h3>
+                <p class="text-xs text-slate-500 font-bengali mb-6">Regal Gold ও Linen Texture সহ প্রিমিয়াম ডিজাইন।</p>
+                <a href="../print-media/supreme-textured-certificate.html" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-emerald-500 transition-all">
+                    View & Download PDF <i data-lucide="download" class="w-3 h-3"></i>
+                </a>
+            </div>
+
+            <!-- Item 02: Supreme Authority Marksheet -->
+            <div class="item-card">
+                <div class="h-64 mb-6 overflow-hidden rounded-xl border border-white/10">
+                    <iframe src="../print-media/supreme-authority-marksheet.html" class="w-full h-full" scrolling="no"></iframe>
+                </div>
+                <h3 class="text-lg font-black text-white uppercase italic mb-2">Supreme Marksheet</h3>
+                <p class="text-xs text-slate-500 font-bengali mb-6">হাই-কনট্রাস্ট এবং বোল্ড টাইপোগ্রাফি যুক্ত প্রাতিষ্ঠানিক মার্কশিট।</p>
+                <a href="../print-media/supreme-authority-marksheet.html" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-emerald-500 transition-all">
+                    View & Download PDF <i data-lucide="download" class="w-3 h-3"></i>
+                </a>
+            </div>
+
+            <!-- Item 03: Vibrant Quad Admit Card -->
+            <div class="item-card">
+                <div class="h-64 mb-6 overflow-hidden rounded-xl border border-white/10">
+                    <iframe src="../print-media/vibrant-quad-admit-card.html" class="w-full h-full" scrolling="no"></iframe>
+                </div>
+                <h3 class="text-lg font-black text-white uppercase italic mb-2">Quad Admit Card</h3>
+                <p class="text-xs text-slate-500 font-bengali mb-6">A4 ল্যান্ডস্কেপ পাতায় ৪টি প্রবেশপত্র প্রিন্টের জন্য প্রস্তুত।</p>
+                <a href="../print-media/vibrant-quad-admit-card.html" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-emerald-500 transition-all">
+                    View & Download PDF <i data-lucide="download" class="w-3 h-3"></i>
+                </a>
+            </div>
+            
+            <!-- ADD NEW ITEMS HERE -->
+
+        </div>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
