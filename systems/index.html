@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems & Blueprints Catalog | Pixel Perfect IT Solutions</title>
+    
+    <!-- SEO for Systems Architecture -->
+    <meta name="description" content="A high-volume archive showcasing elite systems architecture, SaaS blueprints, and national-scale infrastructure designs.">
+    <meta name="keywords" content="Systems Architecture Archive, SaaS Blueprint, ERP Design, Full-Stack Architecture, Pixel Perfect IT">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { background-color: #020617; font-family: 'Inter', 'Hind Siliguri', sans-serif; }
+        .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.1) 1px, transparent 1px); background-size: 40px 40px; }
+        .item-card { 
+            background: rgba(0, 242, 255, 0.02); 
+            border: 1px solid rgba(0, 242, 255, 0.1); 
+            border-radius: 24px; 
+            padding: 20px; 
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        .item-card:hover { transform: scale(1.03); border-color: #00F2FF; box-shadow: 0 20px 40px rgba(0, 242, 255, 0.1); }
+        .item-card iframe { border-radius: 12px; transform: scale(1.1); transform-origin: top left; pointer-events: none; }
+    </style>
+</head>
+<body class="bg-grid text-slate-300">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 py-4 px-6 bg-black/50 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-black text-white uppercase italic tracking-tighter">Systems <span class="text-cyan-400">Vault</span></h1>
+                <p class="text-[9px] font-bold text-cyan-500 uppercase tracking-[0.3em]">Architectural Blueprints</p>
+            </div>
+            <a href="../" class="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-all flex items-center gap-2">
+                <i data-lucide="arrow-left" class="w-3 h-3"></i> Back to Hub
+            </a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="text-center py-20 px-6">
+        <div class="inline-block p-4 bg-cyan-500/10 rounded-full border border-cyan-500/20 mb-8">
+            <i data-lucide="layers" class="w-12 h-12 text-cyan-400"></i>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter mb-4">Systems Architecture</h2>
+        <p class="font-bengali text-slate-400 max-w-xl mx-auto leading-relaxed">
+            মালয়েশিয়ান ও গ্লোবাল এন্টারপ্রাইজের জন্য ডিজাইন করা স্কেলেবল ইআরপি (ERP), SaaS এবং ন্যাশনাল-স্কেল সফটওয়্যার আর্কিটেকচারের ব্লুপ্রিন্ট আর্কাইভ।
+        </p>
+    </header>
+
+    <!-- ITEM GRID -->
+    <main class="max-w-7xl mx-auto px-6 pb-40">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Item 01: National AI Blueprint -->
+            <div class="item-card">
+                <div class="h-64 mb-6 overflow-hidden rounded-xl border border-white/10">
+                    <iframe src="./blueprints/hajj-compass-v3/index.html" class="w-full h-full" scrolling="no"></iframe>
+                </div>
+                <h3 class="text-lg font-black text-white uppercase italic mb-2">National AI Blueprint</h3>
+                <p class="text-xs text-slate-500 font-bengali mb-6">Al-Bawsala Al-Hajj: এন্টারপ্রাইজ লেভেল ন্যাশনাল এআই অপারেটিং সিস্টেম।</p>
+                <a href="./blueprints/hajj-compass-v3/index.html" target="_blank" class="inline-flex items-center gap-2 bg-cyan-600 text-white px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-cyan-500 transition-all">
+                    View Architecture <i data-lucide="file-text" class="w-3 h-3"></i>
+                </a>
+            </div>
+            
+            <!-- Item 02: Cultural Heritage AI -->
+            <div class="item-card">
+                <div class="h-64 mb-6 overflow-hidden rounded-xl border border-white/10">
+                    <iframe src="./blueprints/legacy-project-v3/index.html" class="w-full h-full" scrolling="no"></iframe>
+                </div>
+                <h3 class="text-lg font-black text-white uppercase italic mb-2">Cultural AI Ecosystem</h3>
+                <p class="text-xs text-slate-500 font-bengali mb-6">Al-Turath Al-Hay: সাংস্কৃতিক ঐতিহ্য সংরক্ষণে উন্নত ইন্টারঅ্যাক্টিভ এআই আর্কিটেকচার।</p>
+                <a href="./blueprints/legacy-project-v3/index.html" target="_blank" class="inline-flex items-center gap-2 bg-cyan-600 text-white px-6 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-cyan-500 transition-all">
+                    View Architecture <i data-lucide="file-text" class="w-3 h-3"></i>
+                </a>
+            </div>
+
+            <!-- Placeholder for future blueprints -->
+            <div class="item-card opacity-40">
+                <div class="h-64 mb-6 rounded-xl border border-dashed border-cyan-500/30 flex items-center justify-center">
+                    <p class="text-cyan-500/50 font-mono text-xs uppercase">Awaiting Next Blueprint</p>
+                </div>
+                <h3 class="text-lg font-black text-white uppercase italic mb-2">Enterprise SaaS Blueprint</h3>
+                <p class="text-xs text-slate-500 font-bengali mb-6">মাল্টি-টেন্যান্ট SaaS আর্কিটেকচার এবং পেমেন্ট গেটওয়ে ইন্টিগ্রেশন মডেল।</p>
+                <span class="inline-flex items-center gap-2 text-cyan-500/50 text-[10px] font-black uppercase">
+                    Coming Soon...
+                </span>
+            </div>
+            
+            <!-- ADD NEW BLUEPRINTS HERE -->
+
+        </div>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
